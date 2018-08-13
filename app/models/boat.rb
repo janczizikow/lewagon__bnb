@@ -4,4 +4,5 @@ class Boat < ApplicationRecord
   belongs_to :user
   has_many :bookings
   validates :license_plate, presence: true, uniqueness: true
+  validates :title, :description, :city, :price, :capacity, presence: true
 end
