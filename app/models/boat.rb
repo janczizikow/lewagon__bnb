@@ -3,5 +3,6 @@ class Boat < ApplicationRecord
   # belongs_to :owner, class_name: "User"
   belongs_to :user
   has_many :bookings
-  validates :license_plate, presence: true, uniqueness: true
+  validates :title, :description, :city, :price, :capacity, :license_plate, presence: true
+  validates :license_plate, uniqueness: true
 end
