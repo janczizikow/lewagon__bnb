@@ -1,4 +1,4 @@
-b = Boat.new(
+boat = Boat.new(
   title: "Anna",
   description: "Anna is one of the most representative boats in Port Hercule. The boat features a luxurious upper deck with a roofed minibar, 10 leathern seats, and space for sun beds.",
   city: "Monaco",
@@ -11,9 +11,9 @@ b = Boat.new(
   license_plate: "Anna 69",
   user_id: 1
 )
-b.save!
+boat.save!
 
-b = Boat.new(
+boat = Boat.new(
   title: "Christine",
   description: "Sailing in Monaco has never been so fun and luxurious at the same time. This express cruiser can safely go to up to 70km/h. Christine has an automatic bimini top to provide shade.",
   city: "Monaco",
@@ -26,9 +26,9 @@ b = Boat.new(
   license_plate: "Chistine 3131",
   user_id: 1
 )
-b.save!
+boat.save!
 
-b = Boat.new(
+boat = Boat.new(
   title: "Magarete",
   description: "Magarete is a historical wooden sailboat that has delighted vacationers since 1953.",
   city: "Constance",
@@ -41,25 +41,50 @@ b = Boat.new(
   license_plate: "Magarete 3131",
   user_id: 1
 )
-b.save!
+boat.save!
+
+user = User.new(
+  email: malcom.the.rich@gmail.com,
+  password: 123456,
+)
+user.save!
+
+user = User.new(
+  email: janlosthisphone@yahoo.com,
+  password: 123456,
+)
+user.save!
+
+user = User.new(
+  email: hien.was.eaten.be.flora@gmail.com,
+  password: 123456
+)
+
+booking = Booking.new(
+  user_id: 1,
+  boat_id: 1,
+  total_price: 8000.00,
+  start_date: 2018-06-01 [11:22:33],
+  end_date: 2018-06-02 [11:22:33],
+  number_of_guests: 5,
+  captain: true,
+  status: "finished"
+)
+booking.save!
+
+booking = Booking.new(
+  user_id: 2,
+  boat_id: 2,
+  total_price: 8000.00,
+  start_date: 2018-12-01 [11:22:33],
+  end_date: 2018-12-03 [11:22:33],
+  number_of_guests: 2,
+  captain: false,
+  status: "confirmed"
+)
+booking.save!
 
 
-
-#  create_table "boats", force: :cascade do |t|
-#    t.string "title"
-#    t.text "description"
-#    t.string "city"
-#    t.float "price"
-#    t.boolean "is_available"
-#    t.integer "capacity"
-#    t.boolean "captain"
-#    t.datetime "created_at", null: false
-#    t.datetime "updated_at", null: false
-#    t.string "license_plate"
-#    t.bigint "user_id"
-#    t.index ["user_id"], name: "index_boats_on_user_id"
-#  end
-#
 #  create_table "bookings", force: :cascade do |t|
 #    t.bigint "user_id"
 #    t.bigint "boat_id"
