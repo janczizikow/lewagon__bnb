@@ -4,7 +4,7 @@ class BoatPolicy < ApplicationPolicy
   end
 
   def update?
-    if user.admin ? true : owner_of?
+    user.admin ? true : owner_of?
   end
 
   class Scope < Scope
@@ -15,7 +15,7 @@ class BoatPolicy < ApplicationPolicy
 
   private
 
-  def owner_of?(boat)
-    boat.user == user
+  def owner_of?
+    record.user == user
   end
 end
