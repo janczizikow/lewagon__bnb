@@ -1,0 +1,13 @@
+<ul>
+  <% @boats.each do |boat|  %>
+    <li><%= link_to boat.title, boat_path(boat) %>
+      <ul>
+        <li><%= "Description: #{boat.description}" %></li>
+        <li><%= link_to "Edit", edit_boat_path(boat) %></li>
+        <li> <%= link_to "Destroy", boat_path(boat), method: :delete, data: { confirm: "Delete #{boat.title}?"} %></li>
+      </ul>
+     </li>
+  <% end %>
+</ul>
+
+<%= link_to "Add new boat", new_boat_path %>
