@@ -23,10 +23,10 @@ ActiveRecord::Schema.define(version: 2018_08_14_132726) do
     t.boolean "is_available"
     t.integer "capacity"
     t.boolean "captain"
-    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "license_plate"
+    t.bigint "user_id"
     t.string "photo"
     t.index ["user_id"], name: "index_boats_on_user_id"
   end
@@ -76,7 +76,6 @@ ActiveRecord::Schema.define(version: 2018_08_14_132726) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "boats", "users"
   add_foreign_key "bookings", "boats"
   add_foreign_key "bookings", "users"
   add_foreign_key "reviews", "bookings"

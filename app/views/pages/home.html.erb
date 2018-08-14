@@ -1,8 +1,4 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<% if current_user %>
-
-  <%= current_user.first_name %>
-<% end %>
-
+<%= render 'shared/banner' %>
+<%= render 'perks' %>
+<%= render 'cards' %>
+<%= render 'featurette' %>
