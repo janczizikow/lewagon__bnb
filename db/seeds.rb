@@ -1,7 +1,95 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+b = Boat.new(
+  title: "Anna",
+  description: "Anna is one of the most representative boats in Port Hercule. The boat features a luxurious upper deck with a roofed minibar, 10 leathern seats, and space for sun beds.",
+  city: "Monaco",
+  price: 4000.00,
+  is_available: true,
+  capacity: 10,
+  captain: true,
+  created_at: "2018-01-01 [11:22:33]",
+  updated_at: "2018-05-01 [11:22:33]",
+  license_plate: "Anna 69",
+  user_id: 1
+)
+b.save!
+
+b = Boat.new(
+  title: "Christine",
+  description: "Sailing in Monaco has never been so fun and luxurious at the same time. This express cruiser can safely go to up to 70km/h. Christine has an automatic bimini top to provide shade.",
+  city: "Monaco",
+  price: 1500.00,
+  is_available: true,
+  capacity: 4,
+  captain: false,
+  created_at: "2018-02-01 [11:22:33]",
+  updated_at: "2018-06-01 [11:22:33]",
+  license_plate: "Chistine 3131",
+  user_id: 1
+)
+b.save!
+
+b = Boat.new(
+  title: "Magarete",
+  description: "Magarete is a historical wooden sailboat that has delighted vacationers since 1953.",
+  city: "Constance",
+  price: 800.00,
+  is_available: true,
+  capacity: 4,
+  captain: true,
+  created_at: "2015-05-01 [11:22:33]",
+  updated_at: "2018-08-01 [11:22:33]",
+  license_plate: "Magarete 3131",
+  user_id: 1
+)
+b.save!
+
+
+
+#  create_table "boats", force: :cascade do |t|
+#    t.string "title"
+#    t.text "description"
+#    t.string "city"
+#    t.float "price"
+#    t.boolean "is_available"
+#    t.integer "capacity"
+#    t.boolean "captain"
+#    t.datetime "created_at", null: false
+#    t.datetime "updated_at", null: false
+#    t.string "license_plate"
+#    t.bigint "user_id"
+#    t.index ["user_id"], name: "index_boats_on_user_id"
+#  end
 #
-# Examples:
+#  create_table "bookings", force: :cascade do |t|
+#    t.bigint "user_id"
+#    t.bigint "boat_id"
+#    t.float "total_price"
+#    t.date "start_date"
+#    t.date "end_date"
+#    t.integer "number_of_guests"
+#    t.boolean "captain"
+#    t.string "status"
+#    t.datetime "created_at", null: false
+#    t.datetime "updated_at", null: false
+#    t.index ["boat_id"], name: "index_bookings_on_boat_id"
+#    t.index ["user_id"], name: "index_bookings_on_user_id"
+#  end
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#  create_table "users", force: :cascade do |t|
+#    t.string "email", default: "", null: false
+#    t.string "encrypted_password", default: "", null: false
+#    t.string "reset_password_token"
+#    t.datetime "reset_password_sent_at"
+#    t.datetime "remember_created_at"
+#    t.integer "sign_in_count", default: 0, null: false
+#    t.datetime "current_sign_in_at"
+#    t.datetime "last_sign_in_at"
+#    t.inet "current_sign_in_ip"
+#    t.inet "last_sign_in_ip"
+#    t.datetime "created_at", null: false
+#    t.datetime "updated_at", null: false
+#    t.string "first_name"
+#    t.string "last_name"
+#    t.index ["email"], name: "index_users_on_email", unique: true
+#    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+#  end
