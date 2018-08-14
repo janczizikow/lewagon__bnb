@@ -21,7 +21,6 @@ class BoatsController < ApplicationController
     if @boat.save
       redirect_to boat_path(@boat)
     else
-      raise
       render :new
     end
   end
