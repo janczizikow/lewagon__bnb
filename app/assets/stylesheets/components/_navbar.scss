@@ -1,9 +1,49 @@
 /* Main navbar */
-.Navbar {
+.Navbar,
+.Navbar--transparent {
   width: 100%;
+  z-index: 1079;
+}
+
+.Navbar {
+  background-color: $white;
+  position: fixed;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+
+  &__brand {
+    color: $brand-primary;
+  }
+}
+
+.Navbar--transparent {
+  color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Navbar--fixed {
   position: fixed;
   background-color: $white;
+  color: $dark;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  animation: fade 0.3s ease-in-out;
+  // transition: opacity 0.3s ease-in-out;
+}
+
+.Navbar--home--reversed {
+  color: $dark;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__icon {
+    color: $brand-primary;
+  }
+}
+
+.Navbar__icon {
+  fill: currentColor;
 }
 
 .Navbar__inner {
@@ -30,6 +70,11 @@
   display: flex;
   align-items: center;
   height: 100%;
+  color: $brand-primary;
+
+  &--white {
+    color: $white;
+  }
 }
 
 .Navbar__search-group {
@@ -43,11 +88,11 @@
   align-content: center;
   justify-content: center;
   height: 100%;
-  color: $dark;
+  color: inherit;
 
   &:hover,
   &:focus {
-    color: $dark;
+    color: inherit;
     text-decoration: none;
   }
 
@@ -57,11 +102,11 @@
 }
 
 .Navbar__dropdown {
-  color: $dark;
+  color: inherit;
 
   &:hover,
   &:focus {
-    color: $dark;
+    color: inherit;
     text-decoration: none;
   }
 }
@@ -104,4 +149,12 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
 }

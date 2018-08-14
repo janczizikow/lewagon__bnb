@@ -1,14 +1,19 @@
-<div class="Navbar">
+<div class="<%= controller_name == 'pages' && action_name == 'home' ? 'Navbar--transparent js-navbar-nav' : 'Navbar' %>" >
   <div class="Navbar__inner container">
+
     <!-- Logo -->
     <div class="Navbar__flex">
-      <%= link_to root_path, class: "Navbar__brand" do %>
-        <%= image_tag "Logo.svg" %>
+      <% brand_classes = controller_name == 'pages' && action_name == 'home' ? 'Navbar__brand Navbar__brand--white js-navbar-brand' : 'Navbar__brand' %>
+      <%= link_to root_path, class: brand_classes do %>
+        <%= render 'shared/logo' %>
       <% end %>
 
-      <%= form_tag('/search', method: "get", class: "navbar-form") do %>
+      <!-- Search -->
+      <% form_classes = controller_name == 'pages' && action_name == 'home' ? 'navbar-form hidden js-navbar-form' : 'navbar-form' %>
+
+      <%= form_tag '/search', method: "get", class: form_classes do %>
         <div class="input-group">
-          <%= text_field_tag(:query, nil, placeholder: "Where do you want to boat?", class: "Input form-control") %>
+          <%= text_field_tag(:query, nil, placeholder: "Where do you want to boat?", class: "Input--search form-control") %>
           <div class="input-group-btn">
             <%= button_tag :submit, class: "btn btn-primary" do %>
               <i class="fa fa-search" aria-hidden="true"></i>
