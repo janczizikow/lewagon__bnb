@@ -1,0 +1,12 @@
+.form-control {
+  box-shadow: none;
+  transition: border-color .3s ease-in-out;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.navbar-form {
+  padding: 0;
+}

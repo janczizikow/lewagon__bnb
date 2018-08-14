@@ -9,7 +9,7 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
-  <body>
+  <body class="Site">
     <%= render 'shared/navbar' %>
     <% if notice %>
       <div class="alert alert-info alert-dismissible" role="alert">
@@ -23,7 +23,9 @@
         <%= alert %>
       </div>
     <% end %>
-    <%= yield %>
+    <main class="Site__content">
+      <%= yield %>
+    </main>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
