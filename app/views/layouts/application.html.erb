@@ -11,21 +11,15 @@
   </head>
   <body class="Site">
     <%= render 'shared/navbar' %>
-    <% if notice %>
-      <div class="alert alert-info alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <%= notice %>
-      </div>
-    <% end %>
-    <% if alert %>
-      <div class="alert alert-warning alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <%= alert %>
-      </div>
-    <% end %>
+
+    <%= render 'shared/notice' %>
+
+    <%= render 'shared/alert' %>
+
     <main class="Site__content">
       <%= yield %>
     </main>
+
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
