@@ -1,4 +1,4 @@
-<%= form_for(boat) do |f| %>
+<%= simple_form_for(boat) do |f| %>
   <div class="form-group">
     <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control' %>
@@ -7,6 +7,26 @@
   <div class="form-group">
     <%= f.label :description %>
     <%= f.text_field :description, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :city %>
+    <%= f.text_field :city, class: 'form-control' %>
+  </div>
+
+    <div class="form-group">
+    <%= f.label :price %>
+    <%= f.text_field :price, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :license_plate %>
+    <%= f.text_field :license_plate, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :capacity %>
+    <%= f.text_field :capacity, class: 'form-control' %>
   </div>
 
   <div class="form-group">
