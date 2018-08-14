@@ -25,6 +25,9 @@
     <% end %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js" %>
     <%= javascript_pack_tag 'application' %>
+
+    <%= render 'shared/footer' %>
   </body>
 </html>
