@@ -38,7 +38,11 @@ class BoatsController < ApplicationController
   end
 
   def destroy
-    @boat.destroy
+    if @boat.destroy
+      redirect_to boats_path(@boat)
+    else
+      render :index
+    end
   end
 
   private
