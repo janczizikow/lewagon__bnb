@@ -25,7 +25,7 @@
 
     <!-- Right Navigation -->
     <div class="Navbar__flex hidden-xs hidden-sm">
-      <%= link_to t(".list_your_boat", default: "List your boat"), '#', class: "Navbar__link-item" %>
+      <%= link_to t(".list_your_boat", default: "List your boat"), new_boat_path, class: "Navbar__link-item" %>
 
       <% if user_signed_in? %>
 
