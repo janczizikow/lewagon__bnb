@@ -1,5 +1,9 @@
-<h1>Add new boat </h1>
-
-<%= render 'boats/form', boat: @boat %>
-
-<%= link_to "Go back to the boat listing without saving", boats_path %>
+<section class="boats__forms">
+  <div class="container">
+    <h1>Add new boat </h1>
+    <%= react_component("Form", { action: '/boats', authenticity_token: form_authenticity_token }) %>
+    <div class="small" style="margin: 16px 0;">
+      <%= link_to "Go back to the boat list without saving", boats_path %>
+    </div>
+  </div>
+</section>
