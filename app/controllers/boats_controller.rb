@@ -5,12 +5,12 @@ class BoatsController < ApplicationController
   def index
     @boats = policy_scope(Boat)
     # authorize @boats
-    @boatss = Boat.where.not(latitude: nil, longitude: nil)
+    @boats = Boat.where.not(latitude: nil, longitude: nil)
 
     @markers = @boats.map do |boat|
       {
         lat: boat.latitude,
-        lng: boat.longitude#,
+        lng: boat.longitude
         # infoWindow: { content: render_to_string(partial: "/boats/map_box", locals: { boat: boat }) }
       }
     end
