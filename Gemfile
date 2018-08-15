@@ -34,5 +34,4 @@ group :development, :test do
   gem 'dotenv-rails'
 end
 
-# Google map gem
 gem "geocoder"

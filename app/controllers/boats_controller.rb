@@ -5,9 +5,19 @@ class BoatsController < ApplicationController
   def index
     @boats = policy_scope(Boat)
     # authorize @boats
+    @boatss = Boat.where.not(latitude: nil, longitude: nil)
+
+    @markers = @boats.map do |boat|
+      {
+        lat: boat.latitude,
+        lng: boat.longitude#,
+        # infoWindow: { content: render_to_string(partial: "/boats/map_box", locals: { boat: boat }) }
+      }
+    end
   end
 
   def show
+    @review = Review.new
   end
 
   def new
@@ -53,6 +63,6 @@ class BoatsController < ApplicationController
   end
 
   def boat_params
-    params[:boat].permit(:title, :price, :description, :city, :capacity, :is_available, :has_captain, :license_plate, :photo)
+    params[:boat].permit(:title, :price, :description, :capacity, :is_available, :has_captain, :license_plate, :photo, :address)
   end
 end

@@ -1,0 +1,17 @@
+<div class="submit-review">
+  <%= simple_form_for [@boat, @review], url: boat_path(@boat) do |f| %>
+    <label for="review">How was your experience?</label><br>
+    <form action="" class="form-inline">
+      <label for="review">Rating:</label>
+      <select class="custom-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </form>
+    <%= f.input :comment, placeholder:"Please enter your comment here" %>
+    <%= f.submit :submit, value: "Submit your review", class: "btn btn-default" %> <br><br>
+  <% end %>
+</div>

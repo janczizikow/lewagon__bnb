@@ -42,7 +42,7 @@ user4 = User.create!(
 boat1 = Boat.create!(
   title: "Anna",
   description: "Anna is one of the most representative boats in Port Hercule. The boat features a luxurious upper deck with a roofed minibar, 10 leathern seats, and space for sun beds.",
-  city: "Monaco",
+  address: "157 Rue du Vallon des Auffes, 13007 Marseille, France",
   price: 4000.00,
   is_available: true,
   capacity: 10,
@@ -58,7 +58,7 @@ boat1 = Boat.create!(
 boat2 = Boat.create!(
   title: "Christine",
   description: "Sailing in Monaco has never been so fun and luxurious at the same time. This express cruiser can safely go to up to 70km/h. Christine has an automatic bimini top to provide shade.",
-  city: "Monaco",
+  address: "12 , quai Antoine Ier, 98000 Monaco",
   price: 1500.00,
   is_available: true,
   capacity: 4,
@@ -74,7 +74,7 @@ boat2 = Boat.create!(
 boat3 = Boat.create!(
   title: "Magarete",
   description: "Magarete is a historical wooden sailboat that has delighted vacationers since 1953.",
-  city: "Constance",
+  address: "Hafenstraße 8, 78462 Konstanz",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -115,7 +115,7 @@ review1 = Review.create!(
   booking: booking1
 )
 
-revie2 = Review.create!(
+review2 = Review.create!(
   rating: 5,
   comment: "I'm so amazed!",
   booking: booking2
