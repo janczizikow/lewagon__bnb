@@ -1,4 +1,10 @@
 class BookingPolicy < ApplicationPolicy
+  class Scope < Scope
+    def resolve
+      scope.all
+    end
+  end
+
   def edit?
     update?
   end
@@ -8,12 +14,6 @@ class BookingPolicy < ApplicationPolicy
       true
     else
       (record.status == "pending") && (record.user == user || record.boat.user == user)
-    end
-  end
-
-  class Scope < Scope
-    def resolve
-      scope.all
     end
   end
 end

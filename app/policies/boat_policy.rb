@@ -1,4 +1,10 @@
 class BoatPolicy < ApplicationPolicy
+  class Scope < Scope
+    def resolve
+      scope.all
+    end
+  end
+
   def index?
     true
   end
@@ -25,12 +31,6 @@ class BoatPolicy < ApplicationPolicy
 
   def destroy?
     user.admin ? true : owner_of?
-  end
-
-  class Scope < Scope
-    def resolve
-      scope.all
-    end
   end
 
   private

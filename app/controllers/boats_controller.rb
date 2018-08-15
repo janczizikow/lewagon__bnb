@@ -1,9 +1,10 @@
 class BoatsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_boat, only: [:show, :edit, :update, :destroy]
 
   def index
     @boats = policy_scope(Boat)
-    authorize @boats
+    # authorize @boats
   end
 
   def show
