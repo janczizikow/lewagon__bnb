@@ -4,7 +4,7 @@ class ReviewPolicy < ApplicationPolicy
   end
 
   def update?
-    if user.admin ? true : author_of?
+    user.admin ? true : author_of?
   end
 
   class Scope < Scope

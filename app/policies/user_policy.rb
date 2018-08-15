@@ -4,7 +4,7 @@ class UserPolicy < ApplicationPolicy
   end
 
   def update?
-    if user.admin ? true : profile_owner?
+    user.admin ? true : profile_owner?
   end
 
   class Scope < Scope
