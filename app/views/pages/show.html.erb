@@ -1,107 +1,82 @@
-<div class="wrapper-body">
-  <div class="listing-image" style="background-image: url('https://images.unsplash.com/photo-1508969671549-de1349499c96?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea517723d03bab7a93084506dff12412&auto=format&fit=crop&w=1650&q=80');">
-  </div>
+<%= render 'image' %>
 
-  <div class="container">
-    <div class="row">
+<div class="container container-listing">
+  <div class="row row-content">
+    <!-- Details box -->
+    <div class="listing">
+      <div class="listing-title">
+        <h3><strong>Floria Sailing Yacht with Captain & Crew!</strong></h3>
+        <!-- TODO: Add locaton here: @boat.city -->
+        <p>San Francisco, CA</p>
+      </div>
 
-      <!-- Details box -->
-      <div class="col-md-7">
-        <div class="listing-title">
-          <div class="col-xs-12">
-            <h3><strong>Floria Sailing Yacht with Captain & Crew!</strong></h3>
-            <!-- TODO: Add locaton here: @boat.city -->
-            <p style="border-bottom: solid 1px rgb(190, 189, 186)">San Francisco, CA</p>
+      <div class="listing-details">
+        <div class="row-content">
+          <div class="col-xs-3">
+            <p><strong>Highlights</strong></p>
+          </div>
+
+          <div class="col-xs-9">
+            <!-- TODO: Add boat's description @boat.description -->
+            <p>
+              Explore the bay in style aboard the Derek M. Baylis, a one-of-a-kind custom Wylie Charters private sailing yacht with your very own captain and crew! They will take you where you want to go.</p>
+            <p>
+              The Derek M Baylis is used by scientists for shark tagging and marine floor mapping serving as a 21st century work-boat. She's a truly exquisite blend of elegance and function, and has been outfitted with lounging and meeting space for corporate gatherings and stylish cruising. She's hearty, strong, sleek and fast, and will serve you well, whether you need to spend a week offshore conducting research, entertaining corporate clients, or celebrating a birthday by cruising with friends and family.
+            </p>
           </div>
         </div>
 
-        <div class="listing-details">
-          <div class="row-content">
-            <div class="col-xs-3">
-              <p><strong>Highlights</strong></p>
-            </div>
-
-            <div class="col-xs-9">
-              <!-- TODO: Add boat's description @boat.description -->
-              <p>
-                Explore the bay in style aboard the Derek M. Baylis, a one-of-a-kind custom Wylie Charters private sailing yacht with your very own captain and crew! They will take you where you want to go.</p>
-              <p>
-                The Derek M Baylis is used by scientists for shark tagging and marine floor mapping serving as a 21st century work-boat. She's a truly exquisite blend of elegance and function, and has been outfitted with lounging and meeting space for corporate gatherings and stylish cruising. She's hearty, strong, sleek and fast, and will serve you well, whether you need to spend a week offshore conducting research, entertaining corporate clients, or celebrating a birthday by cruising with friends and family.
-              </p>
-            </div>
+        <div class="row-content">
+          <div class="col-xs-3">
+            <p><strong>Boat Rules</strong></p>
           </div>
 
-          <div class="row-content">
-            <div class="col-xs-3">
-              <p><strong>Boat Rules</strong></p>
-            </div>
-
-            <div class="col-xs-9">
-              <p>DO come and have a great time! We look forward to serving you and will do our best to make it special.</p>
-            </div>
+          <div class="col-xs-9">
+            <p>DO come and have a great time! We look forward to serving you and will do our best to make it special.</p>
           </div>
+        </div>
 
-          <div class="row-content">
-            <div class="col-xs-12">
-              <br><br>
-            </div>
+        <div class="row-content">
+          <div class="col-xs-12">
           </div>
-
-          <div class="row-content">
-            <div class="col-xs-12">
-              <h4 style="border-bottom: solid 1px rgb(190, 189, 186)"><strong>Reviews</strong></h4>
-
-            </div>
-            <!-- Placeholder for one review @boat.review -->
-            <div class="col-xs-3">
-
-              <!-- TODO: Adding user's photo here -->
-              <img src="https://picsum.photos/200/200/?gravity=east" alt="" width="50" class="img-circle">
-              <strong>David</strong>
-            </div>
-
-            <div class="col-xs-9">
-              <p>Jody's boat was awesome! The crew took great care of us and made sure my corporate group had a great time. We even saw whales!</p>
-            </div>
-          </div>
-
         </div>
       </div>
 
-      <!-- Price box -->
-      <div class="col-md-4 col-md-offset-1">
-        <div class="listing-price">
-          <div class="form-group">
-            <!-- TODO: Add boat's price @boat.price -->
-            <h4>$2595.00</h4>
-            <p>per full day + service fees</p><br>
-            <div class="form-inline">
-              <select class="custom-select">
-                <option value="1">Per half day</option>
-                <option value="2">Per full day</option>
-              </select><br><br>
-              <select class="custom-select">
-                <option value="1">With captain</option>
-                <option value="2">Without captain</option>
-              </select><br><br>
-            </div>
+      <div class="listing-reviews">
+        <%= render 'reviews' %>
+      </div>
+    </div>
 
-            <label for="">Party size</label>
-            <select class="custom-select">
-              <option value="1">Please select one of the options</option>
-              <option value="1">1 - 2 passengers</option>
-              <option value="2">3 - 5 passengers</option>
-              <option value="3">6 - 8 passengers</option>
-              <option value="4">9 - 12 passengers</option>
-              <option value="4">above 13 passengers</option>
-            </select><br><br>
+    <!-- Price box -->
+    <div class="confirmation-box">
+      <div class="listing-price">
+        <div class="form-group">
+          <!-- TODO: Add boat's price @boat.price -->
+          <h4>$2595.00</h4>
+          <p>plus service fees</p><br>
+          <select class="custom-select">
+            <option value="1">Per half day</option>
+            <option value="2">Per full day</option>
+          </select><br><br>
+          <select class="custom-select">
+            <option value="1">With captain</option>
+            <option value="2">Without captain</option>
+          </select><br><br>
 
-            <%= render 'calendar'%>
-          </div>
+          <label for="">Party size</label>
+          <select class="custom-select">
+            <option value="1">Please select one of the options</option>
+            <option value="1">1 - 2 passengers</option>
+            <option value="2">3 - 5 passengers</option>
+            <option value="3">6 - 8 passengers</option>
+            <option value="4">9 - 12 passengers</option>
+            <option value="4">above 13 passengers</option>
+          </select><br><br>
 
-          <!-- Placeholder for price @booking.total_price -->
+          <%= render 'calendar'%>
+
+          <!-- TODO: Placeholder for price @booking.total_price -->
           <h5><strong>Subtotal: </strong></h5>
-
           <button class="btn btn-danger form-control">Request to book</button>
           <br><br>
           <p class="text-center" style="color: grey">You won't be charged yet</p>
@@ -109,10 +84,10 @@
           <button class="btn btn-primary form-control">Contact owner</button>
         </div>
       </div>
-
     </div>
 
-    <!-- TODO: Add boat's location/map -->
-    <%= render 'map' %>
   </div>
+
+  <!-- TODO: Add boat's location/map -->
+  <%= render 'map' %>
 </div>

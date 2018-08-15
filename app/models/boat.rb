@@ -5,4 +5,7 @@ class Boat < ApplicationRecord
   has_many :bookings
   validates :title, :description, :city, :price, :capacity, :license_plate, presence: true
   validates :license_plate, uniqueness: true
+
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
 end
