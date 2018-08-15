@@ -50,6 +50,8 @@ boat1 = Boat.create!(
   created_at: "2018-01-01 [11:22:33]",
   updated_at: "2018-05-01 [11:22:33]",
   license_plate: "Anna 69",
+  latitude: 0,
+  longitude: 0,
   user: user2
 )
 
@@ -64,6 +66,8 @@ boat2 = Boat.create!(
   created_at: "2018-02-01 [11:22:33]",
   updated_at: "2018-06-01 [11:22:33]",
   license_plate: "Chistine 3131",
+  latitude: 0,
+  longitude: 0,
   user: user1
 )
 
@@ -78,6 +82,8 @@ boat3 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "Magarete 3131",
+  latitude: 0,
+  longitude: 0,
   user: user1
 )
 
