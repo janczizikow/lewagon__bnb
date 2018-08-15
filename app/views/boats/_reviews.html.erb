@@ -9,7 +9,7 @@
 <div class="review-box" style="border-bottom: solid 1px rgb(220, 224, 223)">
   <br>
   <% if @reviews.present? %>
-    <% @reviews.each do |review| %>
+    <% @boat.reviews.each do |review| %>
       <img src=@user.photo alt="" width="40" class="img-circle">
 
       <div class="d-flex">
@@ -29,24 +29,6 @@
   <% else %>
     <p>There is no review for this boat yet</p>
   <% end %>
-</div><br><br>
+</div><br>
 
-<div class="submit-review">
-  <form action="">
-    <div class="form-group">
-      <label for="review">How was your experience?</label><br>
-      <form action="" class="form-inline">
-        <label for="review">Rating:</label>
-        <select class="custom-select">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="2">3</option>
-          <option value="2">4</option>
-          <option value="2">5</option>
-        </select>
-      </form>
-      <input type="review" class="form-control" Placeholder="Please enter your comment here">
-    </div>
-    <button type="submit" class="btn btn-default">Submit review</button><br><br>
-  </form>
-</div>
+<%= render 'reviews/form' %>
