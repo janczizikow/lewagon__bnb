@@ -12,7 +12,7 @@ body {
 .Site {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - #{$navbar-height});
+  height: 100vh;
 
   &__content {
     margin-top: $navbar-height;
