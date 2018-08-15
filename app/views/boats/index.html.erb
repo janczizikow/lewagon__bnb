@@ -1,3 +1,4 @@
+
   <%= render 'shared/divider', heading: "Freshest adventures", lheading: "Browse our latest listings", background_pic: 'divider-boat-front.png' %>
 
   <%= render 'pages/cards', title: " " %>
@@ -13,19 +14,6 @@
 <% @boats.each do |boat|  %>
   <%= render 'pages/cards' %> <!-- required arguments:
     Headline for the cards div,
-    variable: boatsmostexpensive
-      Title
-      Description
-      City
-      Price
-      (Avatar of owner)
-      Photo
-    -->
-<% end %>
-
-<% @boats.each do |boat|  %>
-  <%= render 'pages/cards' %> <!-- required arguments:
-    Headline for the cards div,
     variable: boatsselectedcity
       Title
       Description
@@ -35,7 +23,3 @@
       Photo
     -->
 <% end %>
-
-<!-- <%= link_to "Add new boat", new_boat_path %>
-    -->
-
