@@ -12,7 +12,10 @@
   <%= render 'pages/cards', title: " " %>
 
 <% @boats.each do |boat|  %>
-  <%= render 'pages/cards' %> <!-- required arguments:
+  <%= render 'pages/cards' %>
+<% end %>
+
+  <!-- required arguments:
     Headline for the cards div,
     variable: boatsselectedcity
       Title
@@ -22,4 +25,3 @@
       (Avatar of owner)
       Photo
     -->
-<% end %>
