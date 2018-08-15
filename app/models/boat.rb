@@ -9,7 +9,7 @@ class Boat < ApplicationRecord
 
 
   mount_uploader :photo, PhotoUploader
-  geocoded_by :city
-  after_validation :geocode, if: :will_save_change_to_address?
+  # geocoded_by :city
+  # after_validation :geocode, if: :will_save_change_to_id?
 
 end
