@@ -15,6 +15,7 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem "react-rails"
 gem 'devise'
 gem "pundit"
 gem 'cloudinary'
