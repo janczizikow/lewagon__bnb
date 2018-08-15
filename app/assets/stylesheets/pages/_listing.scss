@@ -20,7 +20,7 @@
 }
 
 .confirmation-box {
-  flex: 0 0 300px;
+  flex: 0 0 350px;
   height: 100vh;
   position: sticky !important;
   top: 0 !important;
@@ -58,4 +58,10 @@
 
 .review-box {
   padding-left: 30px
+}
+
+.submit-review {
+  padding-right: 30px;
+  padding-left: 30px;
+  border-bottom: solid 1px rgb(190, 189, 186);
 }
