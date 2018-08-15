@@ -35,3 +35,4 @@ end
 
 # Google map gem
 gem "geocoder"
+
