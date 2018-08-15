@@ -12,4 +12,6 @@ class User < ApplicationRecord
   validates_length_of :password, in: 6..20, on: :create
   validates :password, confirmation: true
   validates :password_confirmation, presence: true
+
+  mount_uploader :photo, PhotoUploader
 end
