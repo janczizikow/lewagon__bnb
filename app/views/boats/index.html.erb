@@ -1,29 +1,25 @@
-<div class="flexbox">
-  <div class="card"></div>
 
+  <%= render 'shared/divider', heading: "Freshest adventures", lheading: "Browse our latest listings", background_pic: 'divider-boat-front.png' %>
 
+  <%= render 'pages/cards', title: " " %>
 
-</div>
+  <%= render 'shared/divider', heading: "Most exclusive offerings", lheading: "Find the most luxurious boats and ships here", background_pic: 'divider-boat-front.png' %>
 
+  <%= render 'pages/cards', title: " " %>
 
-<ul>
-  <% @boats.each do |boat|  %>
-    <li><%= link_to boat.title, boat_path(boat) %>
-      <ul>
-        <li><%= "Description: #{boat.description}" %></li>
-        <li><%= link_to "Edit", edit_boat_path(boat) %></li>
-        <li> <%= link_to "Destroy", boat_path(boat), method: :delete, data: { confirm: "Delete #{boat.title}?"} %></li>
-      </ul>
-     </li>
-     <li>
-       <div
-        id="map"
-        style="width: 100%;
-        height: 600px;"
-        data-markers="<%= @markers.to_json %>"
-       ></div>
-     </li>
-  <% end %>
-</ul>
+  <%= render 'shared/divider', heading: "Offerings in Monaco", lheading: "Discover luxury at France's south-east cost", background_pic: 'divider-boat-front.png' %>
 
-<%= link_to "Add new boat", new_boat_path %>
+  <%= render 'pages/cards', title: " " %>
+
+<% @boats.each do |boat|  %>
+  <%= render 'pages/cards' %> <!-- required arguments:
+    Headline for the cards div,
+    variable: boatsselectedcity
+      Title
+      Description
+      City
+      Price
+      (Avatar of owner)
+      Photo
+    -->
+<% end %>
