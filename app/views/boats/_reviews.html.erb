@@ -1,0 +1,52 @@
+<div class="listing-title">
+    <% if @reviews.present? %>
+      <h4><strong><%= @reviews.count %> Reviews</strong></h4>
+    <% else %>
+      <h4><strong>Reviews</strong></h4>
+    <% end %>
+</div>
+
+<div class="review-box" style="border-bottom: solid 1px rgb(220, 224, 223)">
+  <br>
+  <% if @reviews.present? %>
+    <% @reviews.each do |review| %>
+      <img src=@user.photo alt="" width="40" class="img-circle">
+
+      <div class="d-flex">
+        <% (1..5).to_a.each do |el| %>
+          <% if el <= review.rating %>
+            <i class="fas fa-star" style="color: #ffb400;"></i>
+          <% else %>
+            <i class="fas fa-star" style="color: #ccc"></i>
+          <% end %>
+        <% end %>
+      </div>
+
+      <h5><strong>review.user.photo</strong></h5><br>
+      <p><%= review.created_at %></p>
+      <p><%= review.comment %></p>
+    <% end %>
+  <% else %>
+    <p>There is no review for this boat yet</p>
+  <% end %>
+</div><br><br>
+
+<div class="submit-review">
+  <form action="">
+    <div class="form-group">
+      <label for="review">How was your experience?</label><br>
+      <form action="" class="form-inline">
+        <label for="review">Rating:</label>
+        <select class="custom-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="2">3</option>
+          <option value="2">4</option>
+          <option value="2">5</option>
+        </select>
+      </form>
+      <input type="review" class="form-control" Placeholder="Please enter your comment here">
+    </div>
+    <button type="submit" class="btn btn-default">Submit review</button><br><br>
+  </form>
+</div>
