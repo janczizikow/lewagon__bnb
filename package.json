@@ -4,8 +4,8 @@
   "dependencies": {
     "@rails/webpacker": "3.5",
     "bootstrap": "3",
-    "jquery": "^3.3.1",
     "gmaps": "^0.4.24",
+    "jquery": "^3.3.1",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1"
   },
