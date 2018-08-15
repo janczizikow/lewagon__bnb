@@ -15,7 +15,7 @@ class Form extends React.Component {
       },
       address: {
         id: 'boat_address',
-        name: 'boat[city]',
+        name: 'boat[address]',
         label: 'Address',
         type: 'text',
         value: '',
