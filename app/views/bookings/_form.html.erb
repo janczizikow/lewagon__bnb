@@ -2,11 +2,12 @@
   <div class="listing-price">
     <div class="form-group">
       <h4>$<%= @boat.price %></h4>
-      <p>plus service fees</p><br>
+      <p>per day plus service fees</p><br>
 
-      <%= render 'calendar'%>
 
       <%= simple_form_for [@boat, @booking] do |f| %>
+        <%= render 'calendar'%>
+
         <%= f.label :Include_captain %>
         <%= f.select :captain, options_for_select([["Please select one", ""], "Yes", "No"]) %>
         <br><br>

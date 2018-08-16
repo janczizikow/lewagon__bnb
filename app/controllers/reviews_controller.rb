@@ -1,12 +1,19 @@
 class ReviewsController < ApplicationController
+  before_action :set_boat, only: [ :index, :new, :create ]
+  skip_after_action :verify_policy_scoped, only: :index
+  skip_before_action :authenticate_user!, only: [ :index, :show ]
+
   def new
-    @booking = Booking.find(params[:booking_id])
     @review = Review.new
+    authorize @review
   end
 
   def create
-    @boat = Boat.find(params[:boat_id])
-    @review = @boat.reviews.create(review_params)
+    @review = Review.new(review_params)
+    authorize @review
+    @review.user = current_user
+    @review.boat = Boat.find(params[:boat_id])
+    @review.save
     redirect_to boat_path(@boat)
   end
 
@@ -14,5 +21,9 @@ class ReviewsController < ApplicationController
 
   def review_params
     params.require(:review).permit(:comment, :rating)
+  end
+
+  def set_boat
+    @boat = Boat.find(params[:boat_id])
   end
 end
