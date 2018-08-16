@@ -1,9 +1,9 @@
 <%= render 'image' %>
 
-<div class="container container-listing">
-  <div class="row row-content">
+<div class="container-listing">
+  <div class="row listing-content">
     <!-- Details box -->
-    <div class="listing">
+    <div class="listing col-md-8">
       <div class="listing-title">
         <h3><strong><%= @boat.title %></strong></h3>
         <p><%= @boat.address %></p>
@@ -27,52 +27,15 @@
       </div>
     </div>
 
-    <!-- Price box -->
-    <div class="confirmation-box">
-      <div class="listing-price">
-        <div class="form-group">
-          <!-- TODO: Add boat's price @boat.price -->
-          <h4>$<%= @boat.price %></h4>
-          <p>plus service fees</p><br>
-
-          <form action="" class="form-inline">
-            <select class="custom-select">
-              <option value="1">Per half day</option>
-              <option value="2">Per full day</option>
-            </select>
-
-            <select class="custom-select">
-              <option value="1">With captain</option>
-              <option value="2">Without captain</option>
-            </select>
-          </form><br>
+    <%= render 'bookings/form', boat: @boat, booking: @booking %>
 
 
-          <label for="">Party size</label>
-          <select class="custom-select">
-            <option value="1">Please select one of the options</option>
-            <option value="1">1 - 2 passengers</option>
-            <option value="2">3 - 5 passengers</option>
-            <option value="3">6 - 8 passengers</option>
-            <option value="4">9 - 12 passengers</option>
-            <option value="4">above 13 passengers</option>
-          </select><br><br>
-
-          <%= render 'calendar'%>
-
-          <!-- TODO: Placeholder for price @booking.total_price -->
-          <h5>Subtotal: <strong>$<%= @boat.price %></strong></h5><br>
-          <button class="btn btn-danger form-control">Request to book</button>
-          <br><br>
-          <p class="text-center" style="color: grey">You won't be charged yet</p>
-          <p class="text-center" style="color: grey">-- Or --</p>
-          <button class="btn btn-primary form-control">Contact owner</button>
-        </div>
-      </div>
-    </div>
-
+    <br><br><br>
   </div>
 
   <!-- TODO: Add boat's location/map -->
-  <%# render 'map' %>
+
+  <div class="listing-map">
+    <%# render 'map' %>
+  </div>
 </div>
