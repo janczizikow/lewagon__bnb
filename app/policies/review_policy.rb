@@ -1,16 +1,16 @@
 class ReviewPolicy < ApplicationPolicy
+  class Scope < Scope
+    def resolve
+      scope.all
+    end
+  end
+
   def edit?
     update?
   end
 
   def update?
     user.admin ? true : author_of?
-  end
-
-  class Scope < Scope
-    def resolve
-      scope.all
-    end
   end
 
   private
