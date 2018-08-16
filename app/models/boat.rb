@@ -4,9 +4,10 @@ class Boat < ApplicationRecord
 
   belongs_to :user
   has_many :bookings
+  has_many :reviews, through: :bookings
+
   validates :title, :description, :address, :price, :capacity, :license_plate, presence: true
   validates :license_plate, uniqueness: true
-
 
   mount_uploader :photo, PhotoUploader
 

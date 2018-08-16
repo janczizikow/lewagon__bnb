@@ -1,15 +1,13 @@
 class ReviewsController < ApplicationController
   def new
-    @boat = Boat.find(params[:boat_id])
+    @booking = Booking.find(params[:booking_id])
     @review = Review.new
-    raise
   end
 
   def create
     @boat = Boat.find(params[:boat_id])
-    @review = Review.new(review_params)
-    @review.boat = Boat.find(params[:boat_id])
-    @review.save
+    @review = @boat.reviews.create(review_params)
+    redirect_to boat_path(@boat)
   end
 
   private

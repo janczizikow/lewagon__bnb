@@ -10,26 +10,6 @@
   color: rgb(110, 111, 111)
 }
 
-.row-content {
-  display: flex;
-}
-@media(max-width: 700px) {
-  .row-content {
-    display: block !important;
-  }
-}
-
-.confirmation-box {
-  flex: 0 0 350px;
-  height: 100vh;
-  position: sticky !important;
-  top: 0 !important;
-}
-
-.listing {
-  padding-right: 70px;
-}
-
 // listing pictures size
 .tales {
   width: 100%;
@@ -42,7 +22,17 @@
   margin: 0 auto;
 }
 
-// Listing price
+// Listing stying
+@media(max-width: 600px) {
+  .listing-content {
+    display: block !important;
+  }
+}
+
+.listing {
+  padding-right: 70px;
+}
+
 .listing-price {
   align-items: center;
   background-color: rgb(237, 237, 237);
@@ -55,6 +45,12 @@
 .listing-title {
   border-bottom: solid 1px rgb(190, 189, 186);
 }
+
+.listing-map {
+  margin: 50px 10px;
+}
+
+// Review styling
 
 .review-box {
   padding-left: 30px
