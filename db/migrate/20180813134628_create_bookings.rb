@@ -4,8 +4,8 @@ class CreateBookings < ActiveRecord::Migration[5.2]
       t.references :user, foreign_key: true
       t.references :boat, foreign_key: true
       t.float :total_price
-      t.date :start_date
-      t.date :end_date
+      t.string :start_date
+      t.string :end_date
       t.integer :number_of_guests
       t.boolean :captain
       t.string :status
