@@ -17,6 +17,7 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem "react-rails"
 gem 'devise'
 gem "pundit"
 gem 'cloudinary'
@@ -35,6 +36,4 @@ group :development, :test do
   gem 'dotenv-rails'
 end
 
-# Google map gem
 gem "geocoder"
-

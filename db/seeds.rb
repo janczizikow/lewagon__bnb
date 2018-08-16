@@ -109,16 +109,4 @@ booking2 = Booking.create!(
   status: "confirmed"
 )
 
-review1 = Review.create!(
-  rating: 5,
-  comment: "That trip was a wonderful experience!",
-  booking: booking1
-)
-
-review2 = Review.create!(
-  rating: 5,
-  comment: "I'm so amazed!",
-  booking: booking2
-)
-
 puts 'Seed: Finished seeding!'
