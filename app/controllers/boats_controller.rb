@@ -4,15 +4,15 @@ class BoatsController < ApplicationController
 
   def index
     if params[:query].present?
-      @boats = Boat.search_by_title_and_address(params[:query])
+      @boats = policy_scope(Boat).search_by_title_and_address(params[:query])
     else
       @boats = policy_scope(Boat)
       # authorize @boats
       @boats = Boat.where.not(latitude: nil, longitude: nil)
-    else
-    @markers = @boats.map do |boat|
+    end
+    @markers = @boats.map do |boat| {
       lat: boat.latitude,
-      lng: boat.longitude#,
+      lng: boat.longitude}#,
       # infoWindow: { content: render_to_string(partial: "/boats/map_box", locals: { boat: boat }) }
     end
   end
