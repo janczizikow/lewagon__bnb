@@ -1,11 +1,19 @@
-<a href="#" class="Card">
+<%= link_to boat_path(boat), class: "Card" do %>
   <div class="Card__inner">
     <figure class="Card__img">
-      <img src="http://via.placeholder.com/600x360" alt="123" class="img-responsive">
+      <% if boat.photo.present? %>
+        <img
+          src='<%= "#{boat.photo_url(:placeholder)}" %>'
+          data-lowsrc='<%= "#{boat.photo_url(:placeholder)}" %>'
+          data-src='<%= "#{boat.photo}" %>'
+          alt='<%= "#{boat.title}" %>'
+          class="lazyload"
+          />
+      <% end %>
     </figure>
     <div class="Card__body">
-      <h3 class="Card__title">Luxury yacht</h3>
-      <div class="Card__price">$ 389 / day</div>
+      <h3 class="Card__title"><%= boat.title %></h3>
+      <div class="Card__price">$ <%= "#{boat.price}0" %> / day</div>
       <div class="Card__meta">
         <div class="Card__rating">
           <i class="fas fa-star color-secondary"></i>
@@ -13,10 +21,13 @@
           <i class="fas fa-star color-secondary"></i>
           <i class="fas fa-star color-secondary"></i>
           <i class="fas fa-star color-grey-text"></i>
-          <span class="Card__rating-text">189 reviews</span>
+          <span class="Card__rating-text">
+            <%# TODO: Put the dynamic amount reviews %>
+            <%# boat.bookings.reviews %> reviews
+          </span>
         </div>
           <i class="fas fa-heart color-grey-text"></i>
       </div>
     </div>
   </div>
-</a>
+<% end %>

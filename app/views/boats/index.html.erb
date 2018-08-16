@@ -1,19 +1,24 @@
 <section class="boats">
   <div class="container-fluid">
-    <h3>300+ Boats</h3>
+    <h3><%= @boats.count %> Boats</h3>
     <div class="Cards">
       <div class="Cards__grid">
         <% @boats.each do |boat|  %>
           <div class="grid-item">
-            <%= render 'shared/card' %>
+            <%= render 'shared/card', boat: boat %>
           </div>
         <% end %>
       </div>
-      <div class="Cards__map">
+      <div class="Map Cards__map">
         <div class="Map__inner">
-          <img src="http://via.placeholder.com/432x610" alt="" class="img-responsive">
+          <div id="map"
+            style="width: 100%;"
+            data-markers="<%= @markers.to_json %>">
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<%= javascript_pack_tag "map" %>
