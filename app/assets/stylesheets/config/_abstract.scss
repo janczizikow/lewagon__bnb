@@ -17,8 +17,6 @@ $font-stack: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
 //## Custom colors used to override bootstrap defaults
 $primary: #5757ff;
 $secondary: #ff61ab;
-// $yellow: #FDB631;
-// $orange: #E67E22;
 $success: #46cf7b;
 $error: #ff5572;
 $dark: #2a2a30;
@@ -27,5 +25,18 @@ $gray-disabled: #dddde6;
 $gray-border: #e7e7f0;
 $gray-background: #f3f3f9;
 $white: #fff;
+
+$colors-map: (
+  primary: #5757ff,
+  secondary: #ff61ab,
+  success: #46cf7b,
+  error: #ff5572,
+  dark: #2a2a30,
+  grey-text: #bbbccd,
+  grey-disabled: #dddde6,
+  grey-border: #e7e7f0,
+  grey-background: #f3f3f9,
+  white: #fff,
+);
 
 $navbar-height: 60px;

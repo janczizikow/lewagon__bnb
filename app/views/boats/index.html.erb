@@ -1,29 +1,24 @@
-<div class="flexbox">
-  <div class="card"></div>
+<section class="boats">
+  <div class="container-fluid">
+    <h3><%= @boats.count %> Boats</h3>
+    <div class="Cards">
+      <div class="Cards__grid">
+        <% @boats.each do |boat|  %>
+          <div class="grid-item">
+            <%= render 'shared/card', boat: boat %>
+          </div>
+        <% end %>
+      </div>
+      <div class="Map Cards__map">
+        <div class="Map__inner">
+          <div id="map"
+            style="width: 100%;"
+            data-markers="<%= @markers.to_json %>">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-
-
-</div>
-
-
-<ul>
-  <% @boats.each do |boat|  %>
-    <li><%= link_to boat.title, boat_path(boat) %>
-      <ul>
-        <li><%= "Description: #{boat.description}" %></li>
-        <li><%= link_to "Edit", edit_boat_path(boat) %></li>
-        <li> <%= link_to "Destroy", boat_path(boat), method: :delete, data: { confirm: "Delete #{boat.title}?"} %></li>
-      </ul>
-     </li>
-     <li>
-       <div
-        id="map"
-        style="width: 100%;
-        height: 600px;"
-        data-markers="<%= @markers.to_json %>"
-       ></div>
-     </li>
-  <% end %>
-</ul>
-
-<%= link_to "Add new boat", new_boat_path %>
+<%= javascript_pack_tag "map" %>
