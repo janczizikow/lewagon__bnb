@@ -1,27 +1,19 @@
-
-  <%= render 'shared/divider', heading: "Freshest adventures", lheading: "Browse our latest listings", background_pic: 'divider-boat-front.png' %>
-
-  <%= render 'pages/cards', title: " " %>
-
-  <%= render 'shared/divider', heading: "Most exclusive offerings", lheading: "Find the most luxurious boats and ships here", background_pic: 'divider-boat-front.png' %>
-
-  <%= render 'pages/cards', title: " " %>
-
-  <%= render 'shared/divider', heading: "Offerings in Monaco", lheading: "Discover luxury at France's south-east cost", background_pic: 'divider-boat-front.png' %>
-
-  <%= render 'pages/cards', title: " " %>
-
-<% @boats.each do |boat|  %>
-  <%= render 'pages/cards' %>
-<% end %>
-
-  <!-- required arguments:
-    Headline for the cards div,
-    variable: boatsselectedcity
-      Title
-      Description
-      City
-      Price
-      (Avatar of owner)
-      Photo
-    -->
+<section class="boats">
+  <div class="container-fluid">
+    <h3>300+ Boats</h3>
+    <div class="Cards">
+      <div class="Cards__grid">
+        <% @boats.each do |boat|  %>
+          <div class="grid-item">
+            <%= render 'shared/card' %>
+          </div>
+        <% end %>
+      </div>
+      <div class="Cards__map">
+        <div class="Map__inner">
+          <img src="http://via.placeholder.com/432x610" alt="" class="img-responsive">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
