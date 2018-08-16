@@ -1,17 +1,33 @@
-<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-  <div class="card-category">Popular</div>
-  <div class="card-description">
-    <h2> <%# defined?(card_title).nil? ? 'Popular boats' : title %> </h2>
-    <p>Very cool city, the best</p>
-    <% stars = rating %>
-    <% stars_empty = 5 - rating %>
-    <% stars.times do %>
-      <i class="fas fa-star"></i>
-    <% end %>
-    <% stars_empty.times do %>
-      <i class="far fa-star"></i>
-    <% end %>
+<%= link_to boat_path(boat), class: "Card" do %>
+  <div class="Card__inner">
+    <figure class="Card__img">
+      <% if boat.photo.present? %>
+        <img
+          src='<%= "#{boat.photo_url(:placeholder)}" %>'
+          data-lowsrc='<%= "#{boat.photo_url(:placeholder)}" %>'
+          data-src='<%= "#{boat.photo}" %>'
+          alt='<%= "#{boat.title}" %>'
+          class="lazyload"
+          />
+      <% end %>
+    </figure>
+    <div class="Card__body">
+      <h3 class="Card__title"><%= boat.title %></h3>
+      <div class="Card__price">$ <%= "#{boat.price}0" %> / day</div>
+      <div class="Card__meta">
+        <div class="Card__rating">
+          <i class="fas fa-star color-secondary"></i>
+          <i class="fas fa-star color-secondary"></i>
+          <i class="fas fa-star color-secondary"></i>
+          <i class="fas fa-star color-secondary"></i>
+          <i class="fas fa-star color-grey-text"></i>
+          <span class="Card__rating-text">
+            <%# TODO: Put the dynamic amount reviews %>
+            <%# boat.bookings.reviews %> reviews
+          </span>
+        </div>
+          <i class="fas fa-heart color-grey-text"></i>
+      </div>
+    </div>
   </div>
-  <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-  <a class="card-link" href="#" ></a>
-</div>
+<% end %>

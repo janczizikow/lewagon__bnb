@@ -59,6 +59,11 @@
   display: none;
 }
 
+.Navbar__inner.container-fluid::before,
+.Navbar__inner.container-fluid::after, {
+  display: none;
+}
+
 .Navbar__flex {
   display: flex;
   align-items: center;
