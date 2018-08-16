@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.4.4'
 
+gem 'pg_search'
+
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
@@ -15,6 +17,7 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem "react-rails"
 gem 'devise'
 gem "pundit"
 gem 'cloudinary'
@@ -33,6 +36,4 @@ group :development, :test do
   gem 'dotenv-rails'
 end
 
-# Google map gem
 gem "geocoder"
-

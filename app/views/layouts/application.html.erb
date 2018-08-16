@@ -7,7 +7,11 @@
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+
+    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+
+    <!-- Polyfills must load sync, since they need to be active before other script runs -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
   </head>
   <body class="Site">
     <%= render 'shared/navbar' %>
@@ -20,11 +24,11 @@
       <%= yield %>
     </main>
 
+    <%= render 'shared/footer' %>
+
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}" %>
     <%= javascript_pack_tag 'application' %>
-    <%= javascript_pack_tag "map" %>
-
-    <%= render 'shared/footer' %>
+    <%= yield(:after_js) %>
   </body>
 </html>
