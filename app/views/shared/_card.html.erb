@@ -18,7 +18,7 @@
         <div class="Card__rating">
             <div class="d-flex">
               <% (1..5).to_a.each do |el| %>
-                <% if el <= boat.reviews.last.rating %>
+                <% if el <= boat&.reviews&.last&.rating %>
                   <i class="fas fa-star" style="color: #ffb400;"></i>
                 <% else %>
                   <i class="fas fa-star" style="color: #ccc"></i>
