@@ -9,7 +9,7 @@ class BoatsController < ApplicationController
       @boats = policy_scope(Boat)
       authorize @boats
     end
-    @markers = Boat.where.not(latitude: nil, longitude: nil).map do |boat|
+    @markers = @boats.where.not(latitude: nil, longitude: nil).map do |boat|
       {
         lat: boat.latitude,
         lng: boat.longitude
