@@ -16,14 +16,17 @@
       <div class="Card__price">$ <%= "#{boat.price}0" %> / day</div>
       <div class="Card__meta">
         <div class="Card__rating">
-          <i class="fas fa-star color-secondary"></i>
-          <i class="fas fa-star color-secondary"></i>
-          <i class="fas fa-star color-secondary"></i>
-          <i class="fas fa-star color-secondary"></i>
-          <i class="fas fa-star color-grey-text"></i>
-          <span class="Card__rating-text">
-            <%# TODO: Put the dynamic amount reviews %>
-            <%# boat.bookings.reviews %> reviews
+            <div class="d-flex">
+              <% (1..5).to_a.each do |el| %>
+                <% if  boat.reviews.present? %>
+                    <% if el <= boat.reviews.last.rating %>
+                      <i class="fas fa-star" style="color: #ffb400;"></i>
+                  <% else %>
+                    <i class="fas fa-star" style="color: #ccc"></i>
+                  <% end %>
+                <% end %>
+              <% end %>
+            </div>
           </span>
         </div>
           <i class="fas fa-heart color-grey-text"></i>

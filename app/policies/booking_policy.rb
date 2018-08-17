@@ -5,6 +5,10 @@ class BookingPolicy < ApplicationPolicy
     end
   end
 
+  def show?
+    true
+  end
+
   def edit?
     update?
   end
@@ -15,5 +19,13 @@ class BookingPolicy < ApplicationPolicy
     else
       (record.status == "pending") && (record.user == user || record.boat.user == user)
     end
+  end
+
+  def create?
+    true
+  end
+
+  def new?
+    create?
   end
 end

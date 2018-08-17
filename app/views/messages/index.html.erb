@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="conversation-link">
+    <%= link_to "<< Back to your inbox", conversations_path  %>
+  </div>
+
+  <div class="row message-row">
+    <!-- message box for users to type their message here -->
+    <div class="message-box col-xs-12 col-md-4">
+      <%= form_for [@conversation, @message] do |f| %>
+        <%= f.label :new_message %>
+        <%= f.text_area :body, class: "form-control" %>
+
+        <%= f.text_field :user_id, value: current_user.id, type: "hidden" %> <br>
+
+        <%= f.submit "Send message", class: "ui blue labeled submit icon button" %> <br>
+      <% end %>
+    </div>
+
+    <!-- display users' messages here -->
+    <div class="message-content col-xs-12 col-md-6">
+      <h5><strong>Current conversation</strong></h5>
+      <% @messages.each do |message| %>
+        <% if message.body %>
+          <% user = User.find(message.user_id) %>
+          <div class=”item”>
+            <div class=”content”>
+              <div class="user-body">
+                <% if user.first_name.blank? %>
+                  <strong>Secret admirer: </strong><%= message.body %>
+                <% else %>
+                  <strong><%= user.first_name %>: </strong><%= message.body %>
+                <% end %>
+              </div>
+
+              <div class=”list”>
+                <div class=”item”>
+                  <%= message.message_time %>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

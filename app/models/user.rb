@@ -8,6 +8,7 @@ class User < ApplicationRecord
 
   has_many :owned_boats, dependent: :destroy, class_name: 'Boat'
   has_many :bookings
+  has_many :reviews
   has_many :rented_boats, through: :bookings, source: :boat
 
   # Validate password

@@ -11,7 +11,7 @@
       <!-- Search -->
       <% form_classes = controller_name == 'pages' && action_name == 'home' ? 'navbar-form hidden js-navbar-form' : 'navbar-form' %>
 
-      <%= form_tag '/search', method: "get", class: form_classes do %>
+      <%= form_tag '/boats', method: "get", class: form_classes do %>
         <div class="input-group">
           <%= text_field_tag(:query, nil, placeholder: "Where do you want to boat?", class: "Input--search form-control") %>
           <div class="input-group-btn">
@@ -30,8 +30,8 @@
       <% if user_signed_in? %>
 
         <!-- Links when logged in -->
-        <%= link_to "Cruises", "#", class: "Navbar__link-item" %>
-        <%= link_to "Messages", "#", class: "Navbar__link-item" %>
+        <%= link_to "Cruises", boats_path, class: "Navbar__link-item" %>
+        <%= link_to "Messages", conversations_path, class: "Navbar__link-item" %>
         <div class="dropdown Navbar__link-item">
           <a href="#" class="Navbar__dropdown dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
             <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
@@ -90,4 +90,3 @@
     </div>
   </div>
 </div>
-

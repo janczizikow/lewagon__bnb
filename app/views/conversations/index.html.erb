@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row conversation-row">
+    <h3><strong>Current inbox</strong></h3>
+    <div class="conversation-list">
+      <% @conversations.each do |conversation| %>
+        <ul>
+          <% if conversation.sender_id == current_user.id || conversation.recipient_id == current_user.id %>
+            <% if conversation.sender_id == current_user.id %>
+              <% recipient = User.find(conversation.recipient_id) %>
+            <% else %>
+              <% recipient = User.find(conversation.sender_id) %>
+            <% end %>
+
+            <li>
+              <%= conversation.recipient.first_name %> |
+              <%= link_to "Hangout", conversation_messages_path(conversation) %>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row conversation-row">
+    <h5><strong>Start a new conversation</strong></h5>
+    <div class="conversation-list">
+      <% @users.each do |user| %>
+        <ul>
+          <% if user.id != current_user.id %>
+            <li>
+              <% if user.first_name.blank? %>
+              <p>Secret admirer | <%= link_to 'New message', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post' %></p>
+              <% else %>
+                <p><%= user.first_name %> | <%= link_to 'New message', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post' %></p>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+</div>
