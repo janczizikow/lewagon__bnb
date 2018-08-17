@@ -39,34 +39,37 @@
             </ul>
         </div>
         <!-- Avatar with dropdown menu -->
-        <div class="Navbar__links">
-          <div class="dropdown">
-            <%= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "Navbar__avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
-            <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-              <li>
-                <%= link_to "#" do %>
-                  <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
-                <% end %>
-              </li>
-              <li>
-                <%= link_to "#" do %>
-                  <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
-                <% end %>
-              </li>
-              <li>
-                <%= link_to destroy_user_session_path, method: :delete do %>
-                  <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
-                <% end %>
-              </li>
-            </ul>
-          </div>
+        <div class="dropdown Navbar__link-item">
+          <% if current_user.photo.present? %>
+            <%# TODO: BETTER CROPPING??? %>
+            <%= cl_image_tag(current_user.photo, gravity: 'face', width: 80, height: 80, crop: "fill", class: "Navbar__avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown") %>
+            <%# cl_ "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "Navbar__avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <% else %>
+            <div class="Navbar__avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+              <i class="fas fa-user-circle Navbar__user-icon"></i>
+            </div>
+          <% end %>
+
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li>
+              <%= link_to dashboard_path do %>
+                <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out-alt"></i>  <%= t(".sign_out", default: "Log out") %>
+              <% end %>
+            </li>
+          </ul>
         </div>
       <% else %>
         <!-- Login link (when logged out) -->
         <div class="dropdown Navbar__link-item">
           <a href="#" class="Navbar__dropdown dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
             <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-              <li><a href="#">123</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Customer support</a></li>
             </ul>
         </div>
         <%= link_to t(".sign_in", default: "Log in"), new_user_session_path, class: "Navbar__link-item" %>

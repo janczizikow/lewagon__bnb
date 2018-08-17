@@ -116,6 +116,10 @@
   }
 }
 
+.Navbar__user-icon {
+  font-size: 24px;
+}
+
 .Navbar__avatar {
   width: 40px;
   height: auto;
@@ -127,7 +131,8 @@
 
 /* Dropdown menu */
 .navbar-wagon-dropdown-menu {
-  margin-top: 15px;
+  margin-top: 0px;
+  right: 11px;
   box-shadow: 1px 1px 4px #E6E6E6;
   border-color: #E6E6E6;
 }

@@ -21,6 +21,7 @@ class ReviewPolicy < ApplicationPolicy
     create?
   end
 
+
   private
 
   def author_of?

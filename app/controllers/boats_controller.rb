@@ -3,6 +3,7 @@ class BoatsController < ApplicationController
   before_action :set_boat, only: [:show, :edit, :update, :destroy]
 
   def index
+
     if params[:query].present?
       @boats = policy_scope(Boat).search_by_title_and_address(params[:query])
     else

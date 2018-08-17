@@ -10,6 +10,7 @@ gem 'puma'
 gem 'rails', '5.2.1'
 gem 'redis'
 
+# Fronted gems
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'font-awesome-sass'
@@ -17,14 +18,22 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-gem "react-rails"
+gem 'react-rails'
+
+# Authethitication & Authorization
 gem 'devise'
-gem "pundit"
+gem 'pundit'
+
+# Images
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
 
+# Geocoding
+gem 'geocoder'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'rails_real_favicon'
 end
 
 group :development, :test do
@@ -35,5 +44,3 @@ group :development, :test do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'dotenv-rails'
 end
-
-gem "geocoder"

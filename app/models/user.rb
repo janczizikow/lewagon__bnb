@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  mount_uploader :photo, PhotoUploader
+
   has_many :owned_boats, dependent: :destroy, class_name: 'Boat'
   has_many :bookings
   has_many :reviews
@@ -11,8 +13,6 @@ class User < ApplicationRecord
 
   # Validate password
   validates_length_of :password, in: 6..20, on: :create
-  validates :password, confirmation: true
-  validates :password_confirmation, presence: true
-
-  mount_uploader :photo, PhotoUploader
+  # validates :password, confirmation: true
+  # validates :password_confirmation, presence: true
 end
