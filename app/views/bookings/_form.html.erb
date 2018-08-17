@@ -19,7 +19,8 @@
         <br><br>
         <p class="text-center" style="color: grey">You won't be charged yet</p>
         <p class="text-center" style="color: grey">-- Or --</p>
-        <%= f.submit "Contat owner", class: "btn btn-primary form-control" %>
+
+        <button class="btn btn-primary custom-link form-control"><%= link_to "Contact owner", conversations_path %></button>
       <% end %>
     </div>
   </div>
