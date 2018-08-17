@@ -41,7 +41,7 @@
         <!-- Avatar with dropdown menu -->
         <div class="dropdown Navbar__link-item">
           <% if current_user.photo.present? %>
-            <%= cl_image_tag current_user.photo(:avatar), class: "Navbar__avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+            <%= cl_image_tag(current_user.photo, gravity: 'face', width: 80, height: 80, crop: "crop", class: "Navbar__avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown") %>
             <%# cl_ "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "Navbar__avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
           <% else %>
             <div class="Navbar__avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
