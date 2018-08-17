@@ -195,8 +195,6 @@ boat7 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "e",
-  latitude: nil,
-  longitude: nil,
   user: user2,
   remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/fritz-fjellaker-35893-unsplash.jpg'
 )
@@ -212,8 +210,6 @@ boat8 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "f",
-  latitude: nil,
-  longitude: nil,
   user: user4,
   remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/garrett-parker-118937-unsplash.jpg'
 )
@@ -228,8 +224,6 @@ boat9 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "g",
-  latitude: nil,
-  longitude: nil,
   user: user6,
   remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435881/BoatsSeeds/kalen-emsley-94129-unsplash.jpg'
 )
@@ -244,8 +238,6 @@ boat10 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "h",
-  latitude: nil,
-  longitude: nil,
   user: user5,
   remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435881/BoatsSeeds/jon-flobrant-329679-unsplash.jpg'
 )

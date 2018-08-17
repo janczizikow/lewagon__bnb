@@ -23,7 +23,8 @@ const addMap = () => {
         map.setCenter(markers[0].lat, markers[0].lng);
         map.setZoom(14);
       } else {
-        map.fitLatLngBounds(markers);
+        map.setZoom(4);
+        // map.fitLatLngBounds(markers);
       }
     }
   }
