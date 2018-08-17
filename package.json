@@ -5,6 +5,7 @@
     "@rails/webpacker": "3.5",
     "babel-preset-react": "^6.24.1",
     "bootstrap": "3",
+    "flatpickr": "^4.5.1",
     "cloudinary-react": "^1.0.6",
     "gmaps": "^0.4.24",
     "jquery": "^3.3.1",

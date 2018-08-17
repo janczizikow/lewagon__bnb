@@ -3,7 +3,7 @@
     <div class="Banner__content">
       <h1 class="Banner__heading">Round up your crew and set sail</h1>
       <p class="Banner__leading">Find and rent the perfect boat. Captain optional.</p>
-      <%= form_for '/search', method: "get", class: "Banner__form" do %>
+      <%= form_tag('/boats', method: "get", class: "Banner__form") do %>
         <div class="input-group input-group-lg">
           <%= text_field_tag(:query, nil, placeholder: "Where do you want to boat?", class: "Input Banner__input form-control") %>
           <div class="input-group-btn">

@@ -3,9 +3,12 @@ class BoatsController < ApplicationController
   before_action :set_boat, only: [:show, :edit, :update, :destroy]
 
   def index
-    @boats = policy_scope(Boat)
-    authorize @boats
-
+    if params[:query].present?
+      @boats = policy_scope(Boat).search_by_title_and_address(params[:query])
+    else
+      @boats = policy_scope(Boat)
+      authorize @boats
+    end
     @markers = Boat.where.not(latitude: nil, longitude: nil).map do |boat|
       {
         lat: boat.latitude,
