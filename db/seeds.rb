@@ -287,7 +287,7 @@ boat13 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user3,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435884/BoatsSeeds/ryan-waring-367078-unsplash.jpg'
 )
 boat14 = Boat.create!(
   title: "Cross Koh Pha-nGhan",
@@ -447,7 +447,7 @@ boat23 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435880/BoatsSeeds/fancycrave-223110-unsplash.jpg'
 )
 boat24 = Boat.create!(
   title: "Danish Date",
