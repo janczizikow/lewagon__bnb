@@ -28,7 +28,11 @@
         <ul>
           <% if user.id != current_user.id %>
             <li>
-              <p><%= user.first_name %> | <%= link_to 'New message', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post' %></p>
+              <% if user.first_name.blank? %>
+              <p>Secret admirer | <%= link_to 'New message', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post' %></p>
+              <% else %>
+                <p><%= user.first_name %> | <%= link_to 'New message', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post' %></p>
+              <% end %>
             </li>
           <% end %>
         </ul>
