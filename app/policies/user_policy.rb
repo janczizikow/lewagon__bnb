@@ -1,10 +1,4 @@
 class UserPolicy < ApplicationPolicy
-  class Scope < Scope
-    def resolve
-      scope.all
-    end
-  end
-
   def edit?
     update?
   end
@@ -14,6 +8,13 @@ class UserPolicy < ApplicationPolicy
   end
 
   def profile_owner?
-    record.id == params[:id]
+    # Not sure if that's the safest approach, but it seems to be working
+    record.id == user.id || params[:id]
+  end
+  
+  class Scope < Scope
+    def resolve
+      scope.all
+    end
   end
 end
