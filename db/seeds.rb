@@ -96,7 +96,7 @@ boat1 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user2,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435886/BoatsSeeds/shaah-shahidh-557311-unsplash.jpg'
 )
 
 boat2 = Boat.create!(
@@ -113,12 +113,12 @@ boat2 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435875/BoatsSeeds/eric-ward-346232-unsplash.jpg'
 )
 
 boat3 = Boat.create!(
-  title: "Through the Spooky Ages",
-  description: "Magarete is a historical wooden sailboat that has delighted vacationers since 1953.",
+  title: "Dracula's Spooky Boat",
+  description: "Mwahaha--a historical wooden sailboat that has delighted vacationers since 1953.",
   address: "Hafenstraße 8, 78462 Konstanz",
   price: 800.00,
   is_available: true,
@@ -130,7 +130,7 @@ boat3 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user8,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435902/BoatsSeeds/artem-sapegin-371573-unsplash.jpg'
 )
 
 boat4 = Boat.create!(
