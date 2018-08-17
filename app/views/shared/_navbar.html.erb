@@ -30,8 +30,8 @@
       <% if user_signed_in? %>
 
         <!-- Links when logged in -->
-        <%= link_to "Cruises", "#", class: "Navbar__link-item" %>
-        <%= link_to "Messages", "#", class: "Navbar__link-item" %>
+        <%= link_to "Cruises", boats_path, class: "Navbar__link-item" %>
+        <%= link_to "Messages", conversations_path, class: "Navbar__link-item" %>
         <div class="dropdown Navbar__link-item">
           <a href="#" class="Navbar__dropdown dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
             <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
@@ -87,4 +87,3 @@
     </div>
   </div>
 </div>
-

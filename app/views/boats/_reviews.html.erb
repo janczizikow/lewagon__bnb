@@ -10,17 +10,18 @@
 <!-- Review content -->
 <div class="review-box" style="border-bottom: solid 1px rgb(220, 224, 223)">
   <% if @boat.reviews.present? %>
-  <ul>
+    <ul>
     <% @boat.reviews.each do |review| %>
-        <img src=@user.photo alt="" width="40" class="img-circle">
+      <img src=@user.photo alt="" width="40" class="img-circle">
       <li>
-        <% if review.user.first_name.blank?  %>
+        <% if review.user.first_name.blank? %>
           <p><strong>Anonymous</strong></p>
         <% else %>
           <p><strong><%= review.user.first_name %></strong></p>
         <% end %>
-        <p>Comment: <%= review.comment %></p>
-        <p>Post on: <%= review.created_at.strftime("%Y-%m-%d") %></p>
+
+      <p>Comment: <%= review.comment %></p>
+      <p>Post on: <%= review.created_at.strftime("%Y-%m-%d") %></p>
 
         <div class="d-flex">
           <% (1..5).to_a.each do |el| %>
@@ -31,13 +32,12 @@
             <% end %>
           <% end %>
         </div>
-      <% end %>
-      <% else %>
-      <p>There is no review for this boat yet</p>
-      <% end %>
+    <% end %>
+  <% else %>
+    <p>There is no review for this boat yet</p>
     </li>
+  <% end %>
   </ul>
-
 </div><br>
 
 <%= render 'reviews/form' %>
