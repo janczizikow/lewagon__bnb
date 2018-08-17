@@ -93,8 +93,8 @@ boat1 = Boat.create!(
   created_at: "2018-01-01 [11:22:33]",
   updated_at: "2018-05-01 [11:22:33]",
   license_plate: "qwe",
-  latitude: 43.7346109,
-  longitude: 7.420887,
+  latitude: nil,
+  longitude: nil,
   user: user2,
   remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
 )
@@ -110,8 +110,8 @@ boat2 = Boat.create!(
   created_at: "2018-02-01 [11:22:33]",
   updated_at: "2018-06-01 [11:22:33]",
   license_plate: "ewq",
-  latitude: 43.7346109,
-  longitude: 7.420887,
+  latitude: nil,
+  longitude: nil,
   user: user1,
   remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
 )
@@ -127,16 +127,16 @@ boat3 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "b",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user8,
   remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
 )
 
 boat4 = Boat.create!(
-  title: "Magarete",
+  title: "Dutchy Yatchy",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Amsterdam, Netherlands",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -144,16 +144,16 @@ boat4 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "a",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user9,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435899/BoatsSeeds/stig-ottesen-350903-unsplash.jpg'
 )
 
 boat5 = Boat.create!(
-  title: "Magarete",
+  title: "Boating with Mariscos y Vino",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Cala de Sant Vicent 07811 Balearic Islands, Spain",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -161,16 +161,16 @@ boat5 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "c",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user7,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435898/BoatsSeeds/bobby-burch-319840-unsplash.jpg'
 )
 
 boat6 = Boat.create!(
-  title: "Magarete",
+  title: "Canoeing Under the Influence",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Rhyl Railway Station, Kinmel Street, Rhyl, UK",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -178,16 +178,16 @@ boat6 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "d",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435878/BoatsSeeds/iswanto-arif-446324-unsplash.jpg'
 )
 
 boat7 = Boat.create!(
-  title: "Magarete",
+  title: "La Venezia di Diego",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Burano, Venice, Metropolitan City of Venice, Italy",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -195,16 +195,16 @@ boat7 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "e",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user2,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/fritz-fjellaker-35893-unsplash.jpg'
 )
 
 boat8 = Boat.create!(
-  title: "Magarete",
+  title: "Jan My Iceland",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Stokkseyri, Iceland",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -212,15 +212,15 @@ boat8 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "f",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user3,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/garrett-parker-118937-unsplash.jpg'
 )
 boat9 = Boat.create!(
-  title: "Magarete",
+  title: "Indian Local Sail",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Naya Ghat, Theri Bazar, Ayodhya, Uttar Pradesh, India",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -228,15 +228,15 @@ boat9 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "g",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user6,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435881/BoatsSeeds/kalen-emsley-94129-unsplash.jpg'
 )
 boat10 = Boat.create!(
-  title: "Magarete",
+  title: "Canoe a Nordic Escape",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Trondheim, Norway",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -244,15 +244,15 @@ boat10 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "h",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user5,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435881/BoatsSeeds/jon-flobrant-329679-unsplash.jpg'
 )
 boat11 = Boat.create!(
-  title: "Magarete",
+  title: "On My French Riviera",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Port Pierre-Canto, Boulevard de la Croisette, Cannes, France",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -260,15 +260,15 @@ boat11 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "i",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user10,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435883/BoatsSeeds/sensei-minimal-429449-unsplash.jpg'
 )
 boat12 = Boat.create!(
-  title: "Magarete",
+  title: "From The Beach",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Phi Phi Islands, Krabi, Thailand",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -276,15 +276,15 @@ boat12 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "j",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435884/BoatsSeeds/ryan-waring-367078-unsplash.jpg'
 )
 boat13 = Boat.create!(
-  title: "Magarete",
+  title: "Tech Boating in SFO",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "PIER 39, San Francisco, CA, USA",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -292,15 +292,15 @@ boat13 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "k",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user2,
   remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
 )
 boat14 = Boat.create!(
-  title: "Magarete",
+  title: "Cross Koh Pha-nGhan",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Ko Pha-ngan, Ko Pha-ngan District, Surat Thani, Thailand",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -308,15 +308,15 @@ boat14 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "l",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user3,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435885/BoatsSeeds/rowan-heuvel-21410-unsplash.jpg'
 )
 boat15 = Boat.create!(
-  title: "Magarete",
+  title: "A lo Panameno",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Colon, Panama",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -324,15 +324,15 @@ boat15 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "mnn",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435886/BoatsSeeds/wayan-parmana-484307-unsplash.jpg'
 )
 boat16 = Boat.create!(
-  title: "Magarete",
+  title: "Tony Montana Yatch",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Miami Beach, Florida, USA",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -340,15 +340,15 @@ boat16 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "nno",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user4,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435899/BoatsSeeds/joseph-barrientos-93565-unsplash.jpg'
 )
 boat17 = Boat.create!(
-  title: "Magarete",
+  title: "Liddle Boaty",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Lac de Constance, Switzerland",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -356,15 +356,15 @@ boat17 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "nop",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435899/BoatsSeeds/luca-bravo-149740-unsplash.jpg'
 )
 boat18 = Boat.create!(
-  title: "Magarete",
+  title: "California Dream",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "San Francisco, California, USA",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -372,15 +372,15 @@ boat18 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "opq",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435885/BoatsSeeds/tj-kolesnik-480098-unsplash.jpg'
 )
 boat19 = Boat.create!(
-  title: "Magarete",
+  title: "NewYorker in the Hamptons",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Hamptons, New York, USA",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -388,15 +388,15 @@ boat19 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "pqr",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435883/BoatsSeeds/sensei-minimal-429449-unsplash.jpg'
 )
 boat20 = Boat.create!(
-  title: "Magarete",
+  title: "Party DJ on Board",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Ibiza, Spain",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -404,15 +404,15 @@ boat20 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "rqs",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user3,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435886/BoatsSeeds/john-fornander-724775-unsplash.jpg'
 )
 boat21 = Boat.create!(
-  title: "Magarete",
+  title: "Ka Thai Boating",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Bangkok, Thailand",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -420,15 +420,15 @@ boat21 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "qst",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435880/BoatsSeeds/fancycrave-223110-unsplash.jpg'
 )
 boat22 = Boat.create!(
-  title: "Magarete",
+  title: "Viking Style",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Höfn, Iceland",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -436,15 +436,15 @@ boat22 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "stu",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user2,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/garrett-parker-118937-unsplash.jpg'
 )
 boat23 = Boat.create!(
-  title: "Magarete",
+  title: "Sail With Nature",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Alesund, Norway",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -452,15 +452,15 @@ boat23 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "tuv",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user1,
   remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
 )
 boat24 = Boat.create!(
-  title: "Magarete",
+  title: "Danish Date",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Nordhavnen 2150, Copenhagen, Denmark",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -468,15 +468,15 @@ boat24 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "uvy",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435875/BoatsSeeds/eric-ward-346232-unsplash.jpg'
 )
 boat25 = Boat.create!(
-  title: "Magarete",
+  title: "Sail With the gods",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-  address: "Hafenstraße 8, 78462 Konstanz",
+  address: "Mykonos, Greece",
   price: 800.00,
   is_available: true,
   capacity: 4,
@@ -484,44 +484,44 @@ boat25 = Boat.create!(
   created_at: "2015-05-01 [11:22:33]",
   updated_at: "2018-08-01 [11:22:33]",
   license_plate: "vyz",
-  latitude: 47.6595483,
-  longitude: 9.1799032,
+  latitude: nil,
+  longitude: nil,
   user: user2,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435875/BoatsSeeds/elyne-anthonissen-343923-unsplash.jpg'
 )
 
-# booking1 = Booking.create!(
-#   user: user1,
-#   boat: boat1,
-#   total_price: 8000.00,
-#   start_date: DateTime.strptime("08/01/2018 11:00", "%m/%d/%Y %H:%M"),
-#   end_date: DateTime.strptime("08/02/2018 17:00", "%m/%d/%Y %H:%M"),
-#   number_of_guests: 5,
-#   captain: true,
-#   status: "finished"
-# )
+booking1 = Booking.create!(
+  user: user1,
+  boat: boat1,
+  total_price: 8000.00,
+  start_date: DateTime.strptime("08/01/2018 11:00", "%m/%d/%Y %H:%M"),
+  end_date: DateTime.strptime("08/02/2018 17:00", "%m/%d/%Y %H:%M"),
+  number_of_guests: 5,
+  captain: true,
+  status: "finished"
+)
 
-# booking2 = Booking.create!(
-#   user: user2,
-#   boat: boat2,
-#   total_price: 4500.00,
-#   start_date: DateTime.strptime("12/01/2018 11:00", "%m/%d/%Y %H:%M"),
-#   end_date: DateTime.strptime("03/01/2018 11:00", "%m/%d/%Y %H:%M"),
-#   number_of_guests: 2,
-#   captain: false,
-#   status: "confirmed"
-# )
+booking2 = Booking.create!(
+  user: user2,
+  boat: boat2,
+  total_price: 4500.00,
+  start_date: DateTime.strptime("12/01/2018 11:00", "%m/%d/%Y %H:%M"),
+  end_date: DateTime.strptime("03/01/2018 11:00", "%m/%d/%Y %H:%M"),
+  number_of_guests: 2,
+  captain: false,
+  status: "confirmed"
+)
 
-# review1 = Review.create!(
-#   rating: 5,
-#   comment: "That trip was a wonderful experience!",
-#   booking: booking1
-# )
+review1 = Review.create!(
+  rating: 5,
+  comment: "That trip was a wonderful experience!",
+  booking: booking1
+)
 
-# review2 = Review.create!(
-#   rating: 5,
-#   comment: "I'm so amazed!",
-#   booking: booking2
-# )
+review2 = Review.create!(
+  rating: 5,
+  comment: "I'm so amazed!",
+  booking: booking2
+)
 
 puts 'Seed: Finished seeding!'

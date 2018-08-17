@@ -51,10 +51,12 @@ ActiveRecord::Schema.define(version: 2018_08_15_102150) do
   create_table "reviews", force: :cascade do |t|
     t.integer "rating"
     t.text "comment"
-    t.bigint "booking_id"
+    t.bigint "boat_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["booking_id"], name: "index_reviews_on_booking_id"
+    t.index ["boat_id"], name: "index_reviews_on_boat_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -81,5 +83,6 @@ ActiveRecord::Schema.define(version: 2018_08_15_102150) do
   add_foreign_key "boats", "users"
   add_foreign_key "bookings", "boats"
   add_foreign_key "bookings", "users"
-  add_foreign_key "reviews", "bookings"
+  add_foreign_key "reviews", "boats"
+  add_foreign_key "reviews", "users"
 end

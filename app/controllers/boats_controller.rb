@@ -4,10 +4,9 @@ class BoatsController < ApplicationController
 
   def index
     @boats = policy_scope(Boat)
-    # authorize @boats
-    @boats = Boat.where.not(latitude: nil, longitude: nil)
+    authorize @boats
 
-    @markers = @boats.map do |boat|
+    @markers = Boat.where.not(latitude: nil, longitude: nil).map do |boat|
       {
         lat: boat.latitude,
         lng: boat.longitude
@@ -18,6 +17,7 @@ class BoatsController < ApplicationController
 
   def show
     @review = Review.new
+    @booking = Booking.new
   end
 
   def new
