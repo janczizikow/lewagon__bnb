@@ -96,7 +96,7 @@ boat1 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user2,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435886/BoatsSeeds/shaah-shahidh-557311-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435886/BoatsSeeds/shaah-shahidh-557311-unsplash.jpg'
 )
 
 boat2 = Boat.create!(
@@ -113,7 +113,7 @@ boat2 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435875/BoatsSeeds/eric-ward-346232-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435875/BoatsSeeds/eric-ward-346232-unsplash.jpg'
 )
 
 boat3 = Boat.create!(
@@ -130,7 +130,7 @@ boat3 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user8,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435902/BoatsSeeds/artem-sapegin-371573-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435902/BoatsSeeds/artem-sapegin-371573-unsplash.jpg'
 )
 
 boat4 = Boat.create!(
@@ -147,7 +147,7 @@ boat4 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user9,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435899/BoatsSeeds/stig-ottesen-350903-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435899/BoatsSeeds/stig-ottesen-350903-unsplash.jpg'
 )
 
 boat5 = Boat.create!(
@@ -164,7 +164,7 @@ boat5 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user7,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435898/BoatsSeeds/bobby-burch-319840-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435898/BoatsSeeds/bobby-burch-319840-unsplash.jpg'
 )
 
 boat6 = Boat.create!(
@@ -181,7 +181,7 @@ boat6 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435878/BoatsSeeds/iswanto-arif-446324-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435878/BoatsSeeds/iswanto-arif-446324-unsplash.jpg'
 )
 
 boat7 = Boat.create!(
@@ -198,7 +198,7 @@ boat7 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user2,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/fritz-fjellaker-35893-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/fritz-fjellaker-35893-unsplash.jpg'
 )
 
 boat8 = Boat.create!(
@@ -215,7 +215,7 @@ boat8 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user3,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/garrett-parker-118937-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/garrett-parker-118937-unsplash.jpg'
 )
 boat9 = Boat.create!(
   title: "Indian Local Sail",
@@ -231,7 +231,7 @@ boat9 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user6,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435881/BoatsSeeds/kalen-emsley-94129-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435881/BoatsSeeds/kalen-emsley-94129-unsplash.jpg'
 )
 boat10 = Boat.create!(
   title: "Canoe a Nordic Escape",
@@ -247,7 +247,7 @@ boat10 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user5,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435881/BoatsSeeds/jon-flobrant-329679-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435881/BoatsSeeds/jon-flobrant-329679-unsplash.jpg'
 )
 boat11 = Boat.create!(
   title: "On My French Riviera",
@@ -263,7 +263,7 @@ boat11 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user10,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435883/BoatsSeeds/sensei-minimal-429449-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435883/BoatsSeeds/sensei-minimal-429449-unsplash.jpg'
 )
 boat12 = Boat.create!(
   title: "From The Beach",
@@ -279,7 +279,7 @@ boat12 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435884/BoatsSeeds/ryan-waring-367078-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435884/BoatsSeeds/ryan-waring-367078-unsplash.jpg'
 )
 boat13 = Boat.create!(
   title: "Tech Boating in SFO",
@@ -295,7 +295,7 @@ boat13 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user2,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
 )
 boat14 = Boat.create!(
   title: "Cross Koh Pha-nGhan",
@@ -311,7 +311,7 @@ boat14 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user3,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435885/BoatsSeeds/rowan-heuvel-21410-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435885/BoatsSeeds/rowan-heuvel-21410-unsplash.jpg'
 )
 boat15 = Boat.create!(
   title: "A lo Panameno",
@@ -327,7 +327,7 @@ boat15 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435886/BoatsSeeds/wayan-parmana-484307-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435886/BoatsSeeds/wayan-parmana-484307-unsplash.jpg'
 )
 boat16 = Boat.create!(
   title: "Tony Montana Yatch",
@@ -343,7 +343,7 @@ boat16 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user4,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435899/BoatsSeeds/joseph-barrientos-93565-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435899/BoatsSeeds/joseph-barrientos-93565-unsplash.jpg'
 )
 boat17 = Boat.create!(
   title: "Liddle Boaty",
@@ -359,7 +359,7 @@ boat17 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435899/BoatsSeeds/luca-bravo-149740-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435899/BoatsSeeds/luca-bravo-149740-unsplash.jpg'
 )
 boat18 = Boat.create!(
   title: "California Dream",
@@ -375,7 +375,7 @@ boat18 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435885/BoatsSeeds/tj-kolesnik-480098-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435885/BoatsSeeds/tj-kolesnik-480098-unsplash.jpg'
 )
 boat19 = Boat.create!(
   title: "NewYorker in the Hamptons",
@@ -391,7 +391,7 @@ boat19 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435883/BoatsSeeds/sensei-minimal-429449-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435883/BoatsSeeds/sensei-minimal-429449-unsplash.jpg'
 )
 boat20 = Boat.create!(
   title: "Party DJ on Board",
@@ -407,7 +407,7 @@ boat20 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user3,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435886/BoatsSeeds/john-fornander-724775-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435886/BoatsSeeds/john-fornander-724775-unsplash.jpg'
 )
 boat21 = Boat.create!(
   title: "Ka Thai Boating",
@@ -423,7 +423,7 @@ boat21 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435880/BoatsSeeds/fancycrave-223110-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435880/BoatsSeeds/fancycrave-223110-unsplash.jpg'
 )
 boat22 = Boat.create!(
   title: "Viking Style",
@@ -439,7 +439,7 @@ boat22 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user2,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/garrett-parker-118937-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435879/BoatsSeeds/garrett-parker-118937-unsplash.jpg'
 )
 boat23 = Boat.create!(
   title: "Sail With Nature",
@@ -455,7 +455,7 @@ boat23 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534427417/BoatsSeeds/z20nlms23jnxjsi6zowz.jpg'
 )
 boat24 = Boat.create!(
   title: "Danish Date",
@@ -471,7 +471,7 @@ boat24 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user1,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435875/BoatsSeeds/eric-ward-346232-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435875/BoatsSeeds/eric-ward-346232-unsplash.jpg'
 )
 boat25 = Boat.create!(
   title: "Sail With the gods",
@@ -487,7 +487,7 @@ boat25 = Boat.create!(
   latitude: nil,
   longitude: nil,
   user: user2,
-  remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435875/BoatsSeeds/elyne-anthonissen-343923-unsplash.jpg'
+  # remote_photo_url: 'https://res.cloudinary.com/shanlongjj/image/upload/v1534435875/BoatsSeeds/elyne-anthonissen-343923-unsplash.jpg'
 )
 
 booking1 = Booking.create!(
